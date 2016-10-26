@@ -77,24 +77,28 @@
         .form-control();
     }
 
-    input[type="checkbox"],
-    input[type="radio"]
+    .gfield_checkbox
     {
-        float: left; width: 40px;width:auto;height: auto;
+        .checkbox();
     }
-    
-    .gfield_checkbox label,
-    .gfield_radio label
+    .gfield_radio
     {
-        margin-top:0;margin-left: 10px;font-weight: normal;
+        .radio();
+    }
+
+    .gfield_checkbox,
+    .gfield_radio
+    {
+        label
+        {
+            padding-left: 2px;
+        }
     }
 
     textarea
     {
         height: auto;
     }
-
-    > ul > li {margin: 0;height: 25px;}
 }
 
 .gform_button
