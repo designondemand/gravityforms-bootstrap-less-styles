@@ -97,6 +97,17 @@
 
         @media ( min-width: @grid-float-breakpoint )
         {
+            &.small
+            {
+                width: 25%;
+
+                .gform_wrapper .gf_left_half &,
+                .gform_wrapper .gf_right_half &
+                {
+                    width: 50%;
+                }
+            }
+
             &.medium
             {
                 width: 50%;
@@ -107,6 +118,8 @@
                     width: 100%;
                 }
             }
+
+            // .large not defined cause it's default
         }
     }
 
