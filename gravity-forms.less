@@ -14,11 +14,19 @@
     ul
     {
         .list-unstyled();
+        .make-row();
     }
 
     li
     {
         .form-group();
+        .make-sm-column( 12 );
+    }
+
+    .gf_left_half,
+    .gf_right_half
+    {
+        .make-sm-column( 6 );
     }
 
     form
