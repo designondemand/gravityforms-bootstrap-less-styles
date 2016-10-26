@@ -209,3 +209,60 @@
         .make-sm-column( 6 );
     }
 }
+
+// readyclass.css classes
+.gf_list_2col,
+.gf_list_3col,
+.gf_list_4col,
+.gf_list_6col
+{
+    .ginput_container
+    {
+        ul
+        {
+            .make-row();
+        }
+    }
+}
+
+.gf_list_2col
+{
+    .ginput_container
+    {
+        li
+        {
+            .make-sm-column( 6 );
+        }
+    }
+}
+.gf_list_3col
+{
+    .ginput_container
+    {
+        li
+        {
+            .make-sm-column( 4 );
+        }
+    }
+}
+.gf_list_4col
+{
+    .ginput_container
+    {
+        li
+        {
+            .make-sm-column( 3 );
+        }
+    }
+}
+// .gf_list_5col not possible w/ 12 col grid :/
+.gf_list_6col
+{
+    .ginput_container
+    {
+        li
+        {
+            .make-sm-column( 2 );
+        }
+    }
+}
