@@ -173,6 +173,27 @@
     .gfield_list
     {
         .table();
+
+        @media ( max-width: @grid-float-breakpoint-max )
+        {
+            // Hide normal header
+            thead
+            {
+                display: none;
+            }
+
+            // Make everything into blocks
+            &, td, tr, tbody
+            {
+                display: block;
+            }
+
+            // Show label before input
+            td[data-label]:before
+            {
+                content: attr( data-label );
+            }
+        }
     }
 
     .gform_fileupload_multifile
