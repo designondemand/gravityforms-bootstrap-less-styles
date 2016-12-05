@@ -245,6 +245,7 @@
     .progress-bar();
 }
 
+// Complex / Multi-input Fields
 .ginput_complex
 {
     .make-row();
@@ -271,6 +272,29 @@
     .ginput_right
     {
         .make-sm-column( 6 );
+    }
+}
+
+.ginput_container_date
+{
+    .clear-multi
+    {
+        .row();
+    }
+
+    .gfield_date_dropdown_day
+    {
+        .make-sm-column( 2 );
+    }
+
+    .gfield_date_dropdown_month
+    {
+        .make-sm-column( 5 );
+    }
+
+    .gfield_date_dropdown_year
+    {
+        .make-sm-column( 5 );
     }
 }
 
