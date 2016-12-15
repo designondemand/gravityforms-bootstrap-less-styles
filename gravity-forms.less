@@ -60,16 +60,6 @@
         {
             color: @state-danger-text;
         }
-
-        input,
-        select,
-        textarea
-        {
-            border-color: @alert-danger-border;
-            background-color: @alert-danger-bg;
-            color: @alert-danger-text;
-            .form-control-focus(@alert-danger-text);
-        }
     }
 
     .button
@@ -109,6 +99,14 @@
     input[type="color"]
     {
         .form-control();
+
+        .gfield_error &
+        {
+            border-color: @alert-danger-border;
+            background-color: @alert-danger-bg;
+            color: @alert-danger-text;
+            .form-control-focus(@alert-danger-text);
+        }
 
         @media ( min-width: @grid-float-breakpoint )
         {
